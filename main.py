@@ -15,7 +15,6 @@ import os
 load_dotenv(".env")
 # secretkey = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 secretkey = os.getenv("SECRET_KEY")
-print(secretkey)
 app = Flask(__name__)
 app.config['SECRET_KEY'] = secretkey
 ckeditor = CKEditor(app)
